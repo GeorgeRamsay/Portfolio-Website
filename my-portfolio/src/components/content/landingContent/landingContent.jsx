@@ -11,7 +11,7 @@ export const LandingContent = () => {
         <div>
            
             <LandingHeader/>
-            {/* <LandingAbout/> */}
+            <LandingAbout/>
             {/* <ProjectCard
                 image={PPDashboard}
                 title='Parkinsons Pulse'

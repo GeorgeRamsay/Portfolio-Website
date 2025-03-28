@@ -7,7 +7,7 @@ const LandingHeader = () => {
     
     return (
         <div>
-            <div className={backgroundStyle.backgroundBody}>
+            <div>
                 <div className={backgroundStyle.waves}>
                     <div className={backgroundStyle.wave}></div>
                     <div className={backgroundStyle.wave}></div>   
@@ -15,7 +15,7 @@ const LandingHeader = () => {
                 </div>
             </div>
             <div className={classNames(backgroundStyle.backgroundBody,style.headerContainer)}>
-                <div className={style.headerContent}>
+                <div className={style.headerContent}>   
                     <div className={style.headerText}>
                         <h1 className={style.name}> George Ramsay</h1>
                         <h2> Software Developer</h2>

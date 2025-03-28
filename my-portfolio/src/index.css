@@ -9,7 +9,7 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 :root{
@@ -21,6 +21,6 @@ code {
   --nameHeader-height: 50dvh;
   
 
-  --navBar-height: 2rem;
+  --navBar-height: 4rem;
 
 }
