@@ -1,4 +1,5 @@
 import { LandingContent } from "../components/content/landingContent/landingContent";
+
 import React from 'react';
 
 function LandingPage() {
