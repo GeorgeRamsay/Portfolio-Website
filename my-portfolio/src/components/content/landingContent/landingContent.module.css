@@ -4,4 +4,9 @@
     z-index: 1;
     background-color: var(--primary-color);
     margin-top: calc(var(--nameHeader-height) + var(--navBar-height));
+
+}
+
+.fadeLayoutPlaceholder {
+    height: 400dvh;
 }

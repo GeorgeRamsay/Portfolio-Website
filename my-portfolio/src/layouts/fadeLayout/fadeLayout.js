@@ -10,8 +10,7 @@ const FadeLayout = ({ children, scrollTriggerPosition, fadeInDistance, fadeOutDi
             const rect = document.documentElement.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
-            const totalTriggerValue = ( scrollTriggerPosition + 1)  * windowHeight;
-
+            const totalTriggerValue = baseHeightValue + (scrollTriggerPosition + 1) * windowHeight;
             if (rect.top <= windowHeight - totalTriggerValue && rect.top >= -totalTriggerValue) {
                 // Fade-in calculation
                 const distance = windowHeight - totalTriggerValue - rect.top;

@@ -29,7 +29,7 @@
     animation: wave 8s -3s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.8;
-	top: calc(var(--nameHeader-height) );
+	top: calc(var(--nameHeader-height) - 10em);
     left: 0;
     z-index: -1;
 }

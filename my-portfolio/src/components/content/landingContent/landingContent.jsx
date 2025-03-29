@@ -15,12 +15,12 @@ export const LandingContent = () => {
                 <FadeLayout scrollTriggerPosition={1} fadeInDistance={300} fadeOutDistance={1000}>
                     <LandingAbout/>
                 </FadeLayout>
-            
-                <FadeLayout scrollTriggerPosition={2} fadeInDistance={300} fadeOutDistance={1000}>
+                <div className={style.fadeLayoutPlaceholder}> </div>
+
+
+
                     <LandingProjects/>
-
-                </FadeLayout>
-
+               
             </div>
         </div>
     )
