@@ -8,5 +8,5 @@
 }
 
 .fadeLayoutPlaceholder {
-    height: 400dvh;
+    height: calc(300dvh);
 }
