@@ -9,6 +9,8 @@
     justify-content: center;
     position: fixed;
     top:0;
+
+    display: none; /* Display none for now */
 }
 
 .navBar_item{

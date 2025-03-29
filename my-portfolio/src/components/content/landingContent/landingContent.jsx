@@ -1,27 +1,27 @@
 import React from 'react';
-import PPDashboard from '../../../assets/images/projectImages/PP Dashboard.png'
 import LandingHeader from '../../sections/landingHeader/landingHeader'
 import LandingAbout from '../../sections/landingAbout/landingAbout';
-import ProjectCard from '../../cards/projectCard/projectCard';
-import HeaderBackground from '../../backgrounds/headerBackground'
 
+import style from './landingContent.module.css';
+import FadeLayout from '../../../layouts/fadeLayout/fadeLayout';
+import LandingProjects from '../../sections/landingProjects/landingProjects';
 export const LandingContent = () => {
 
     return (
         <div>
            
             <LandingHeader/>
-            <LandingAbout/>
-            {/* <ProjectCard
-                image={PPDashboard}
-                title='Parkinsons Pulse'
-                text=''
-                link=''
+            <div className={style.contentBody}>
+                <FadeLayout scrollTriggerPosition={1} fadeInDistance={300} fadeOutDistance={1000}>
+                    <LandingAbout/>
+                </FadeLayout>
             
-            /> */}
-         
+                <FadeLayout scrollTriggerPosition={2} fadeInDistance={300} fadeOutDistance={1000}>
+                    <LandingProjects/>
 
+                </FadeLayout>
 
+            </div>
         </div>
     )
 }

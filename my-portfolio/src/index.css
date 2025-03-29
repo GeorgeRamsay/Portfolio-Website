@@ -18,9 +18,9 @@ code {
 
 
 
-  --nameHeader-height: 50dvh;
+  --nameHeader-height: 100dvh;
   
 
-  --navBar-height: 4rem;
+  --navBar-height: 0rem; /* Display none for now */
 
 }

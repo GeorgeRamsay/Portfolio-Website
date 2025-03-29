@@ -9,7 +9,7 @@ function LandingPage() {
         <div>
             <NavBar/>
             <LandingContent/>
-            {/* <LandingFooter/> */}
+            
         </div>
             
 
