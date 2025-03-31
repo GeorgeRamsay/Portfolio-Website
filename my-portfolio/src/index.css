@@ -21,7 +21,7 @@ code {
 
   --nameHeader-height: 100dvh;
   
-
+  --subheader-fontSize: 3rem;
   --navBar-height: 0rem; /* Display none for now */
 
 }

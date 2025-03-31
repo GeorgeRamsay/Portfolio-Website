@@ -1,26 +1,21 @@
 .workExperienceSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
 .jobsContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
+    align-items: center;
 }
 
-.job {
-    opacity: 0;
-    transition: opacity 0.1s ease; /* Quick transition for smoother effect */
-    margin: 20px 0;
+.jobCard {
+    position: relative;
+    margin-bottom: 40px;
+    width: 60%;
     padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
 }
