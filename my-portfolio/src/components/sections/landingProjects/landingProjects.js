@@ -2,13 +2,9 @@ import React from 'react';
 import style from './landingProjects.module.css';
 import ProjectColumn from '../../cards/projectCard/projectColumn';
 import PPDashboard from '../../../assets/images/projectImages/PP Dashboard.png';
+import projects from '../../../data/projects'
 
-const projects = [
-    { id: 1, name: 'Parkinsons Pulse', image: PPDashboard },
-    { id: 2, name: 'Project 2', image: '' },
-    { id: 3, name: 'Project 3', image: '' },
-    // Add more projects as needed
-];
+
 
 const LandingProjects = () => {
     return (

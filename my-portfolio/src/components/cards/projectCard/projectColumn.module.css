@@ -49,15 +49,45 @@
 }
 
 .projectColumn:not(:hover) .backgroundImage {
-    filter: blur(5px); /* Apply blur effect */
+    filter: blur(5px); 
 }
 
 .projectColumn:hover .projectContent {
-    opacity: 1; /* Show content on hover */
+    opacity: 1; 
 }
 
 .projectName {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 10px;
+}
+
+
+
+
+.projectDescription {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px;
+    width: 50%;
+    overflow: hidden;
+    transition: opacity 2s ease;
+    opacity: 0; /* Initially hidden */
+    transition-delay: 0.8s;
+}
+
+.projectColumn:hover .projectDescription {
+    opacity: 1; /* Show text */
+}
+
+.projectColumn:not(:hover) .projectDescription {
+    opacity: 0; /* Hide text */
+    transition: opacity 0.1s ease; 
+}
+.projectDescriptionText{
+    text-align: left;
 }

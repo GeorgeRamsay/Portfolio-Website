@@ -16,10 +16,7 @@ export const LandingContent = () => {
                     <LandingAbout/>
                 </FadeLayout>
                 <div className={style.fadeLayoutPlaceholder}> </div>
-
-
-
-                    <LandingProjects/>
+           <LandingProjects/>
                
             </div>
         </div>
