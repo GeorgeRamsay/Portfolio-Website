@@ -11,8 +11,9 @@ const projects = [
     },
     {
         id: 2,
-        name: 'Project 2',
-        image: ''
+        name: 'Go Bear',
+        image: '',
+        techStack: ['React', 'Python', 'JavaScript']
     },
     {
         id: 3,

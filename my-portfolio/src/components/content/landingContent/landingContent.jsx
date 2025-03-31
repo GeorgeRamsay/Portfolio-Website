@@ -5,6 +5,7 @@ import LandingAbout from '../../sections/landingAbout/landingAbout';
 import style from './landingContent.module.css';
 import FadeLayout from '../../../layouts/fadeLayout/fadeLayout';
 import LandingProjects from '../../sections/landingProjects/landingProjects';
+import WorkExperienceSection from '../../sections/workExperienceSection/workExperienceSection';
 export const LandingContent = () => {
 
     return (
@@ -16,8 +17,9 @@ export const LandingContent = () => {
                     <LandingAbout/>
                 </FadeLayout>
                 <div className={style.fadeLayoutPlaceholder}> </div>
-           <LandingProjects/>
-               
+                <LandingProjects/>
+                <WorkExperienceSection />
+
             </div>
         </div>
     )

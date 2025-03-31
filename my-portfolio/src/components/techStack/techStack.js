@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconBrandReact, IconBrandCSharp, IconBrandJavascript } from '@tabler/icons-react';
+import { IconBrandReact, IconBrandCSharp, IconBrandJavascript, IconBrandPython } from '@tabler/icons-react';
 import dotnetIcon from '../../assets/svg/dotnetIcon.svg';
 
 const TechStack = ({ stack = [] }) => {
@@ -15,6 +15,8 @@ const TechStack = ({ stack = [] }) => {
                 return <IconBrandJavascript size={iconSize} color="#F7DF1E" />;
             case 'Dotnet':
                 return <img src={dotnetIcon} alt="dotnet" width={iconSize} height={iconSize} />;
+            case 'Python':
+                return <IconBrandPython size={iconSize} color="#3776AB" />;
             default:
                 return null;
         }
