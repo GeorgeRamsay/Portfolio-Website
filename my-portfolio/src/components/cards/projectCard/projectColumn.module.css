@@ -9,6 +9,7 @@
     transition: flex 0.3s ease;
     position: relative;
     overflow: hidden;
+    
 }
 
 .projectColumn:hover {
@@ -36,15 +37,13 @@
 
 .projectContent {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     z-index: 1;
     position: relative;
     height: 100%;
     width: 100%;
     opacity: 0; /* Hide content by default */
     transition: opacity 0.3s ease; /* Smooth transition for content */
-    
-    
 
 }
 
@@ -56,20 +55,21 @@
     opacity: 1; 
 }
 
-.projectName {
-    font-size: 1.5rem;
+
+
+.projectName{
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 10px;
+
+
 }
 
 
-
-
-.projectDescription {
+.projectDescription, .projectName {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);/* Increase blur effect */
+    -webkit-backdrop-filter: blur(6px);/* Increase blur effect */
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 10px;
@@ -78,16 +78,26 @@
     transition: opacity 2s ease;
     opacity: 0; /* Initially hidden */
     transition-delay: 0.8s;
+    margin-bottom: 1rem;
+
+
 }
 
-.projectColumn:hover .projectDescription {
+.projectColumn:hover .projectDescription, .projectColumn:hover .projectName {
     opacity: 1; /* Show text */
 }
 
-.projectColumn:not(:hover) .projectDescription {
+.projectColumn:not(:hover) .projectDescription, .projectColumn:not(:hover) .projectName {
     opacity: 0; /* Hide text */
     transition: opacity 0.1s ease; 
 }
 .projectDescriptionText{
     text-align: left;
 }
+
+.projectSection{
+
+}
+
+
+

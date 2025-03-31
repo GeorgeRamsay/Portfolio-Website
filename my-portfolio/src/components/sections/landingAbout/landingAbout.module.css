@@ -41,3 +41,8 @@
     word-spacing: 0.1rem;
 }
 
+.contactIcon{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}

@@ -24,9 +24,10 @@
     display: block;
     font-size: 3rem;
     font-weight: 700;
+ 
 
 }
 
 .headerText{
-
+    color: var( --title-background-color);
 }
