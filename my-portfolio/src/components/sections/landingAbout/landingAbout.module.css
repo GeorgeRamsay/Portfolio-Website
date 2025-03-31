@@ -5,6 +5,10 @@
 
 }
 
+.header{
+    color: var(--header-color);
+}
+
 .aboutContent {
     position: fixed;
     top: 50%;
@@ -41,8 +45,12 @@
     word-spacing: 0.1rem;
 }
 
-.contactIcon{
+.contactIconContainer {
     display: flex;
     align-items: center; 
     gap: 10px;
+}
+
+.contactIcon{
+    color: var(--header-color);
 }
