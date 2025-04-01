@@ -9,7 +9,7 @@ import projects from '../../../data/projects'
 const LandingProjects = () => {
     return (
         <div className={style.projectsSection}>
-            <h1 className={style.title}>Recent Projects</h1>
+            <h1 className='subHeader'>Recent Projects</h1>
             <div className={style.projectsContent}>
                 {projects.map((project) => (
                     <ProjectColumn key={project.id} project={project} />

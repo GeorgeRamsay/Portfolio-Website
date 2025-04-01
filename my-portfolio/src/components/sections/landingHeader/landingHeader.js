@@ -18,7 +18,7 @@ const LandingHeader = () => {
                 <div className={style.headerContent}>   
                     <div className={style.headerText}>
                         <h1 className={style.name}> George Ramsay</h1>
-                        <h2> Software Developer</h2>
+                        <h1> Software Developer</h1>
                     </div>
                 </div>
             </div>

@@ -32,7 +32,7 @@ const WorkExperienceSection = () => {
 
     return (
         <div className={style.workExperienceSection} ref={sectionRef}>
-            <h1>Work Experience</h1>
+            <h2 className='subHeader'>Work Experience</h2>
             <div className={style.jobsContainer}>
                 {jobData.map((job, index) => (
                     <JobCard
