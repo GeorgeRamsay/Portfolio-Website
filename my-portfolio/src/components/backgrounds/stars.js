@@ -1,31 +1,27 @@
 import React, { useEffect } from 'react';
+import './stars.css';
 
 const Star = () => {
     useEffect(() => {
-        function stars() {
-            let e = document.createElement("div");
-            e.setAttribute("class", "star");
-            document.body.appendChild(e);
-            e.style.left = Math.random() * window.innerWidth + "px";
-        
-            let size = Math.random() * 12;
-            let duration = Math.random() * 10;
-        
-            e.style.fontSize = size + "px";
-            e.style.animationDuration = 2 + duration + "s";
-            setTimeout(function () {
-                document.body.removeChild(e);
-            }, 5000);
-        }
-        
-        const intervalId = setInterval(function () {
-            stars();
-        }, 50);
+        const starContainer = document.createElement('div');
+        starContainer.className = 'star-container';
+        document.body.appendChild(starContainer);
 
-        return () => clearInterval(intervalId); // Cleanup interval on component unmount
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * -100}vh`; // Start above the viewport
+            star.style.setProperty('--i', Math.random()); // Set a custom property for animation delay
+            starContainer.appendChild(star);
+        }
+
+        return () => {
+            document.body.removeChild(starContainer);
+        };
     }, []);
 
-    return null; 
+    return null;
 };
 
 export default Star;
