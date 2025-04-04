@@ -14,14 +14,7 @@ export const LandingContent = () => {
         <div>
            
             <LandingHeader/>
-            <div className={style.contentBody}>
-                <FadeLayout scrollTriggerPosition={1} fadeInDistance={300} fadeOutDistance={1000}>
-                    <LandingAbout/>
-                </FadeLayout>
-                <div className={style.fadeLayoutPlaceholder}> </div>
-                <LandingProjects/>
-                <WorkExperienceSection />
-            </div>
+
         </div>
-    )
+    ) 
 }
