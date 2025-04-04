@@ -1,0 +1,11 @@
+.copyButton {
+    background-color: var(--light-main);
+    color: var(--header-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.copyButton:hover {
+    background-color: var(--dark-main);
+}

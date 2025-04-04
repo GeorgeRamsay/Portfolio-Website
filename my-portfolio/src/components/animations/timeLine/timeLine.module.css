@@ -1,0 +1,9 @@
+.timeline {
+    position: relative; /* Relative positioning to allow scrolling */
+    left: 50%; /* Center the timeline horizontally */
+    transform: translateX(-50%); /* Ensure it is perfectly centered */
+    width: 4px; /* Thin vertical line */
+    height: 2000px; /* Make the timeline tall enough for scrolling */
+    background-color: black; /* Black color for the timeline */
+    transition: opacity 0.3s ease-out; /* Smooth transition for opacity change */
+}

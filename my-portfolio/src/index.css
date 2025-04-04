@@ -9,5 +9,46 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+:root{
+  --secondary-color: #f5f5f5;
+  --primary-color: #ffffff;
+  --title-background-color: aliceblue;
+  --header-color: #008cb3;
+  --secondary-header-color: #a4a4a4;
+
+
+  --nameHeader-height: 100dvh;
+  
+  --navBar-height: 0rem; /* Display none for now */
+
+}
+
+h2{
+  color: var(--header-color);
+  font-size: 3rem;
+}
+
+h3{
+  color: var(--header-color);
+  font-size: 2rem;
+  margin: 0 ;
+}
+h4{
+  color: var(--secondary-header-color);
+  font-size: 1.25rem;
+  margin: 0 ;
+
+}
+
+
+.glassMorphism{
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

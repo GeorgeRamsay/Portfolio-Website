@@ -1,0 +1,21 @@
+.workExperienceSection {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.jobsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.jobCard {
+    position: relative;
+    margin-bottom: 40px;
+    width: 60%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}

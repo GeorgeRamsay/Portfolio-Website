@@ -1,19 +1,27 @@
 import React from 'react';
-import PPDashboard from '../../../assets/images/projectImages/PP Dashboard.png'
+import LandingHeader from '../../sections/landingHeader/landingHeader'
+import LandingAbout from '../../sections/landingAbout/landingAbout';
 
-import ProjectCard from '../../cards/projectCard/projectCard';
+import style from './landingContent.module.css';
+import FadeLayout from '../../../layouts/fadeLayout/fadeLayout';
+import LandingProjects from '../../sections/landingProjects/landingProjects';
+import WorkExperienceSection from '../../sections/workExperienceSection/workExperienceSection';
+import Timeline from '../../animations/timeLine/timeLine';
 
 export const LandingContent = () => {
 
     return (
         <div>
-            
-            <ProjectCard
-                image={PPDashboard}
-                title="Project 1"
-                text="This is a project"
-                link="/project1"/>
-
+           
+            <LandingHeader/>
+            <div className={style.contentBody}>
+                <FadeLayout scrollTriggerPosition={1} fadeInDistance={300} fadeOutDistance={1000}>
+                    <LandingAbout/>
+                </FadeLayout>
+                <div className={style.fadeLayoutPlaceholder}> </div>
+                <LandingProjects/>
+                <WorkExperienceSection />
+            </div>
         </div>
     )
 }
