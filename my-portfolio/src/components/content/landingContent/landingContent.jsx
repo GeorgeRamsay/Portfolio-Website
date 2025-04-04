@@ -14,7 +14,7 @@ export const LandingContent = () => {
         <div>
            
             <LandingHeader/>
-
+            <LandingAbout/>
         </div>
     ) 
 }
