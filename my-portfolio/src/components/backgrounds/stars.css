@@ -1,0 +1,31 @@
+.star-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure the stars don't interfere with other elements */
+  z-index: -1; /* Ensure the stars are behind other content */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px white, 0 0 10px white;
+  animation: animate 20s linear infinite; /* Increase the duration to 20s */
+  animation-delay: calc(-20s * var(--i)); /* Adjust the delay to match the new duration */
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200vh) rotate(720deg); /* Ensure the stars fall from above the viewport */
+    opacity: 0;
+  }
+}

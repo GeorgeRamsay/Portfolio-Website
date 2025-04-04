@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body, html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 
 body {
   margin: 0;
@@ -9,6 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var( --primary-color);
+
 }
 
 code {
@@ -23,12 +36,11 @@ code {
 
   --anton-font: 'Anton', sans-serif;
   --p-font-size: 1.5rem;
+  --p-font-weight: 300;
+  --p-font-weight-thin: 200;
 
 
-  --nameHeader-height: 100dvh;
-  
-  --navBar-height: 0rem; /* Display none for now */
-
+  --text-margin: 150px;
 
 
 }
@@ -58,10 +70,7 @@ h4{
 
 
 
-
-
   /* Background */
-
 
   * {
     margin: 0;
@@ -69,45 +78,28 @@ h4{
     box-sizing: border-box;
   }
   
+  html, body {
+    height: 100%; /* Ensure the html and body elements cover the full height */
+   
+
+  }
+  
   body {
     background: #111;
+    background-attachment: fixed; /* Make the background fixed */
     min-height: 100vh;
-    overflow: hidden;
+    overflow: auto;
+    position: relative;
+
+    caret-color: var(--secondary-color); /* Change the cursor color to purple */
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="%23000000" stroke="%23CF9FFF" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto;
+
   }
-  
-  .star {
-    position: absolute;
-    top: -20px;
-    color: #fff;
-    animation: animate 10s linear forwards;
-    /* you can set infinite too */
-  }
-  
-  .star::before {
-    content: "\f005";
-    font-family: FontAwesome;
-    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 50px #fff;
-  }
-  
-  @keyframes animate {
-    0% {
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
-    }
-  
-    80% {
-      opacity: 1;
-    }
-  
-    100% {
-      transform: translateY(100vh) rotate(360deg);
-      opacity: 0;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .star {
-      font-size: 8px;
-    }
-  }
-  
+
+
+  /* Style the selected text */
+::selection {
+  background: purple; /* Change the background color of selected text */
+  color: white; /* Change the text color of selected text */
+}
+

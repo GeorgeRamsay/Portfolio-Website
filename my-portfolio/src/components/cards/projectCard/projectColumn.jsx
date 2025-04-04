@@ -4,7 +4,6 @@ import { IconCalendar, IconBrandReact, IconBrandCSharp,IconBrandJavascript } fro
 import dotnetIcon from '../../../assets/svg/dotnetIcon.svg';
 import { ReactSVG } from 'react-svg';
 import TechStack from '../../techStack/techStack.js';
-import backgroundStyle from "../../backgrounds/headerBackground.module.css";
 import classNames from 'classnames';
 
 
