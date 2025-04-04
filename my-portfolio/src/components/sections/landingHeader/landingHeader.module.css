@@ -4,7 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
-    padding-left: 5vw; 
+    margin-left: var(--text-margin);
+    margin-right: var(--text-margin);
     height: 100dvh;
     text-align: left; 
 }

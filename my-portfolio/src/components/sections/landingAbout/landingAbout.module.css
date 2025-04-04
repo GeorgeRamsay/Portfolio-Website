@@ -3,13 +3,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; /* Align items to the left */
-    padding-left: 5vw; /* Add 5vw padding to the left */
     height: 100dvh;
     text-align: left; /* Align text to the left */
-    
+    margin-left: var(--text-margin);
+    margin-right: var(--text-margin);
 }
 .aboutContent {
     
-    color: aliceblue;
  
+}
+
+.introText {
+    font-size: 3rem;
+
+    font-weight:var(--p-font-weight);
+}
+
+.aboutMe{
+    display: flex;
+    border-top: 1px solid var(--primary-color);
+    margin-top: 4rem;
+
+}
+
+.aboutText{
+    font-size: var(--p-font-size);
+    flex: 1.2; 
+
+}
+
+.nameTitle{
+    font-size: 2rem;
+    font-weight: var(--p-font-weight);
+    color: var(--third-color);
+    flex: 0.8; 
 }
