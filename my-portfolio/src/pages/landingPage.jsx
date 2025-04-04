@@ -1,14 +1,15 @@
 import { LandingContent } from "../components/content/landingContent/landingContent";
-import { NavBar } from '../components/navBar/navBar.js'
 import Star from '../components/backgrounds/stars.js';
 import React, { useEffect } from 'react';
+import ProgressBar from "../components/animations/progressBar/progressBar.js";
 function LandingPage() {
 
     return (
         <div>
-            <NavBar />
+
             <LandingContent />
             <Star />
+            <ProgressBar/>
         </div>
     );
 }
