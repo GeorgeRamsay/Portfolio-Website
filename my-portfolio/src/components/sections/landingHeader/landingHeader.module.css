@@ -1,33 +1,14 @@
-.headerContainer{
+.headerContainer {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: var(--nameHeader-height);
-    top: var(--navBar-height);
-    width: 100%;
-    z-index: -1;
-    position: fixed;
-    
-}
-.headerContent{
-    display:flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    
-}  
-
-
-
-.name{
-    display: block;
-    font-size: 3rem;
-    font-weight: 700;
- 
-
+    align-items: flex-start; /* Align items to the left */
+    padding-left: 5vw; /* Add 5vw padding to the left */
+    height: 100vh;
+    text-align: left; /* Align text to the left */
 }
+
 
 .headerText{
-    color: var( --title-background-color);
+    color: var( --primary-color);
 }
