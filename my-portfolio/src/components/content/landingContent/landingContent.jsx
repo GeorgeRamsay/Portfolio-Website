@@ -7,14 +7,16 @@ import FadeLayout from '../../../layouts/fadeLayout/fadeLayout';
 import LandingProjects from '../../sections/landingProjects/landingProjects';
 import WorkExperienceSection from '../../sections/workExperienceSection/workExperienceSection';
 import Timeline from '../../animations/timeLine/timeLine';
+import TechStack from '../../sections/techStack/techStack.js';
+import PullAwayComponent from "../../animations/pullAway/pullAway.js";
+
 
 export const LandingContent = () => {
-
     return (
         <div>
-           
-            <LandingHeader/>
-            <LandingAbout/>
+                <LandingHeader />
+                <LandingAbout />
+                <TechStack />
         </div>
-    ) 
-}
+    );
+};

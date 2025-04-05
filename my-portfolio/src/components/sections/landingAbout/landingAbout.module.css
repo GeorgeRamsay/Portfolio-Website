@@ -23,6 +23,7 @@
     display: flex;
     border-top: 1px solid var(--primary-color);
     margin-top: 4rem;
+    padding-top: 1rem;
 
 }
 

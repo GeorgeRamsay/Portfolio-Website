@@ -2,14 +2,18 @@ import { LandingContent } from "../components/content/landingContent/landingCont
 import Star from '../components/backgrounds/stars.js';
 import React, { useEffect } from 'react';
 import ProgressBar from "../components/animations/progressBar/progressBar.js";
+import PullAwayComponent from "../components/animations/pullAway/pullAway.js";
+
 function LandingPage() {
 
     return (
         <div>
-
-            <LandingContent />
-            <Star />
-            <ProgressBar/>
+           
+                <LandingContent />
+                <Star />
+                <ProgressBar/>
+                
+         
         </div>
     );
 }

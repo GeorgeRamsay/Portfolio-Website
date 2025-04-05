@@ -1,0 +1,7 @@
+.default {
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .lowerOpacity {
+    opacity: 0.5;
+  }
