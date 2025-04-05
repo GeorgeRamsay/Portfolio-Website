@@ -12,7 +12,7 @@
 
 
 .headerText{
-   
+    line-height:1;
     font-size: 5rem;
     font-family: var(--anton-font); 
 }
@@ -22,6 +22,19 @@
 
 }
 .headerDescription{
+    margin-top: 1rem;
     font-size: var(  --p-font-size);
     width: 45rem;
+}
+.bottomRight {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    text-align: right;
+  }
+.numberHeader{
+    font-size: 3rem;
+    font-weight: var( --p-font-weight-thick);
+
 }

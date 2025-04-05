@@ -1,12 +1,12 @@
-.contentBody{
+.contentBody {
     width: 100%;
     height: 10000px;
     z-index: 1;
     /* background-color: var(--primary-color); */
     margin-top: calc(var(--nameHeader-height) + var(--navBar-height));
-
 }
 
 .fadeLayoutPlaceholder {
     height: calc(300dvh);
 }
+
