@@ -3,6 +3,9 @@ import style from './workExperienceSection.module.css';
 import JobCard from '../../cards/jobCard/jobCard';
 import jobData from '../../../data/jobData';
 
+import { IconBriefcase } from '@tabler/icons-react';
+
+
 const WorkExperienceSection = () => {
     const jobRefs = useRef([]);
     const sectionRef = useRef(null);
@@ -32,7 +35,7 @@ const WorkExperienceSection = () => {
 
     return (
         <div className={style.workExperienceSection} ref={sectionRef}>
-            <h2 className='subHeader'>Work Experience</h2>
+                <p className='sectionHeader'><span><IconBriefcase size={40} className={style.icon} /></span>Work Experience</p>
             <div className={style.jobsContainer}>
                 {jobData.map((job, index) => (
                     <JobCard

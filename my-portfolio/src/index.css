@@ -64,7 +64,15 @@ h4{
 }
 
 
-
+.sectionHeader{
+  font-size: 40px;
+  color: var(--header-color);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 0;
+}
 
 
 

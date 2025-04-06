@@ -17,6 +17,7 @@ export const LandingContent = () => {
                 <LandingHeader />
                 <LandingAbout />
                 <TechStack />
+                <WorkExperienceSection />
         </div>
     );
 };
