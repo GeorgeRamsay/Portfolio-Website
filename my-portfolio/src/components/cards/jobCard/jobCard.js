@@ -4,7 +4,7 @@ import { IconMapPinFilled, IconBuildings }  from '@tabler/icons-react';
 
 const Job = React.forwardRef(({ title, duration, description, company, location }, ref) => (
     <div className={style.job} ref={ref}>
-        <h3>{title}</h3>
+        <p className={style.role}>{title}</p>
         <h4>
             <IconBuildings size={20} />
             {company}
@@ -14,7 +14,6 @@ const Job = React.forwardRef(({ title, duration, description, company, location 
             {location}
         </h4>
         <p>{duration}</p>
-        <p>{description}</p>
     </div>
 ));
 

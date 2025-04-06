@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconBrandReact, IconBrandCSharp, IconBrandJavascript, IconBrandTypescript, IconBrandPython, IconBrandNodejs,IconBrandMysql, IconBrandMongodb, IconBrandNextjs } from '@tabler/icons-react';
+import { IconBrandReact, IconBrandCSharp, IconBrandJavascript, IconBrandTypescript, IconBrandPython, IconBrandNodejs,IconBrandMysql, IconBrandMongodb, IconStack2 } from '@tabler/icons-react';
 import style from './techStack.module.css';
 import flask from '../../../assets/svg/techStackIcons/flask.svg';
 import aws from '../../../assets/svg/techStackIcons/aws.svg';
@@ -12,9 +12,8 @@ const TechStack = () => {
     const iconSize = '50';
     return (
         <div className={style.stackAlignment}>
-            <h3> My Stack
+                <p className='sectionHeader'><span><IconStack2 size={40} className={style.icon} /></span>My Stack</p>
 
-            </h3>
 
             <div className={style.stackSection}>
             <br/>
