@@ -18,6 +18,7 @@ export const LandingContent = () => {
                 <LandingAbout />
                 <TechStack />
                 <WorkExperienceSection />
+                <LandingProjects />
         </div>
     );
 };
