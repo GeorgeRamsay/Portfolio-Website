@@ -3,9 +3,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: var(--text-margin);
+    margin-right: var(--text-margin);
 }
 
 .projectsContent {
 
 }
 
+
+.projectCard {
+    padding: 2rem 0;
+}
+
+.projectCard:not(:last-child) {
+    border-bottom: 1px solid var(--faded-color);
+}

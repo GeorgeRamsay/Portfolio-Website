@@ -1,0 +1,39 @@
+.projectsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 300px;
+    margin-right:  300px;
+    padding: 0.05px;
+}
+
+.projectHeader {
+    font-size: 48px;
+    font-family: var( --anton-font);
+}
+
+
+.backButton {
+    background: none;
+    border: none;
+    color: var(--third-color);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.backButton:hover {
+    color: var(--secondary-color);
+}
+
+.projectSubHeader{
+    font-size: 18px;
+    font-family: var( --anton-font);
+    margin: 20px 0;
+}
