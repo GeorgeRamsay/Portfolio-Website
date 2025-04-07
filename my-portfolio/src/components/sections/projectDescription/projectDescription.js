@@ -47,8 +47,8 @@ const ProjectDescription = () => {
             </p>
             <div className={style.techStack}>
                 {project.techStack.map((tech, index) => (
-                    <span key={index} className={style.techName}>
-                        {tech}
+                    <span key={index} className={style  .techName}>
+                        {project.techStackImages[index]} 
                     </span>
                 ))}
             </div>
@@ -63,11 +63,20 @@ const ProjectDescription = () => {
             <p className={style.projectSubHeader}>
                 My Role
             </p>
-            <p className={style.text}>
-                {project.role}
-            </p>
+            {project.role.split('\n').map((line, index) => (
+                    <span key={index} className={style.roleItem}>
+                        {line}
+                    </span>
+                ))}
 
-
+                {project.images && project.images.length > 0 && (
+                    <div className={style.imageContainer}>
+                        {project.images.map((image, index) => (
+                            <img key={index} src={image} alt={`Project ${index}`} className={style.projectImage} />
+                        ))}
+                    </div>
+                )}
+                
         </div>
     );
 };
