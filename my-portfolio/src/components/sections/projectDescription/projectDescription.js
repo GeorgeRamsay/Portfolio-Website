@@ -13,6 +13,8 @@ const ProjectDescription = () => {
     const [project, setProject] = useState(null);
     const navigate = useNavigate(); 
     useEffect(() => {
+        window.scrollTo(0, 0);
+
         // Get the project ID from the URL
         const url = window.location.href;
         const projectId = url.substring(url.lastIndexOf('/') + 1);

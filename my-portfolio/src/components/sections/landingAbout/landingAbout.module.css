@@ -5,8 +5,7 @@
     align-items: flex-start; /* Align items to the left */
     height: 100dvh;
     text-align: left; /* Align text to the left */
-    margin-left: var(--text-margin);
-    margin-right: var(--text-margin);
+
 }
 .aboutContent {
     
@@ -14,7 +13,7 @@
 }
 
 .introText {
-    font-size: 3rem;
+    font-size: 48px;
 
     font-weight:var(--p-font-weight);
 }
@@ -38,4 +37,21 @@
     font-weight: var(--p-font-weight);
     color: var(--third-color);
     flex: 0.8; 
+}
+
+
+/* mobile view */
+@media (max-width: 768px) {
+    .introText {
+        font-size: 24px;
+    
+ 
+    }
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    
+    }
 }

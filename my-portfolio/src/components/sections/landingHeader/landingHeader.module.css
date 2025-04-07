@@ -4,8 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
-    margin-left: var(--text-margin);
-    margin-right: var(--text-margin);
+
     height: 100dvh;
     text-align: left; 
 }
@@ -37,4 +36,24 @@
     font-size: 3rem;
     font-weight: var( --p-font-weight-thick);
 
+}
+
+/* mobile view */
+@media (max-width: 768px) {
+    .headerContainer {
+
+        height: 100dvh;
+        text-align:start 
+    }
+    .headerText{
+        font-size: 48px;
+
+    }
+    .headerDescription{
+        width: 100%;
+        
+    }
+    .numberHeader{
+        font-size: 28px;
+    }
 }
