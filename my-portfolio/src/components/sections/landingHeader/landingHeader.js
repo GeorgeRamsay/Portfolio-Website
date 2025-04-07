@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./landingHeader.module.css";
 import classNames from "classnames";
+import Contact from "../contact/contact";
 
 const LandingHeader = () => {
     
@@ -16,7 +17,7 @@ const LandingHeader = () => {
                         <p className={style.headerDescription}>
                         Hi! I'm <span style={{ color: 'var(--third-color)' }}>George</span>. A creative Full Stack Developer in my first year of professional experience in building high-performance, scalable, and responsive app solutions.
                         </p>
-
+                        <Contact />
                         <div className={style.bottomRight}>
                             <p className={classNames(style.colourChange,style.numberHeader)}>2+</p>
                             <p>Professional Projects</p>

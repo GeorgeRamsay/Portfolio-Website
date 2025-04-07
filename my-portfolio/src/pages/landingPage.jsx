@@ -12,7 +12,7 @@ function LandingPage() {
                 <LandingContent />
                 <Star />
                 <ProgressBar/>
-                
+    
          
         </div>
     );
