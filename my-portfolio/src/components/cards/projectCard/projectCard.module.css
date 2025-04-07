@@ -1,0 +1,52 @@
+.techName:not(:last-child)::after {
+    content: '•'; /* Bullet point */
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    color: var(--primary-color); 
+}
+.projectCard {
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    color: inherit;
+    transition: opacity 0.5s;
+}
+
+.projectCard:hover {
+    opacity: 1;
+}
+
+.projectCard:hover ~ .projectCard {
+    opacity: 0.5;
+}
+
+.projectName {
+    font-size: 1.5rem;
+    font-family: var(--anton-font);
+    font-size: 48px;
+    color: var(--third-color);
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+}
+
+.projectName::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: var(--secondary-color);
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.5s;
+}
+
+.projectCard:hover .projectName::before {
+    width: 100%;
+}
+
+* {
+    text-decoration: none;
+}

@@ -6,6 +6,7 @@ import aws from '../../../assets/svg/techStackIcons/aws.svg';
 import docker from '../../../assets/svg/techStackIcons/docker.svg';
 import git from '../../../assets/svg/techStackIcons/git.svg';
 import nextjs from '../../../assets/svg/techStackIcons/nextjs.svg';
+import dotnet from '../../../assets/svg/techStackIcons/dotnetIcon.svg';
 import classNames from 'classnames';
 
 const TechStack = () => {
@@ -44,8 +45,8 @@ const TechStack = () => {
                 <p className={style.stackTitle}> BACKEND</p>
                 <span className={style.stack}>
                     <span className={style.stackIcon}>
-                    <IconBrandCSharp size={iconSize} color="#239120" />
-                        <span className={style.stackText}>C#</span>
+                    <img src={dotnet} alt="Dotnet" width={iconSize} height={iconSize} />
+                        <span className={style.stackText}>Dotnet</span>
                     </span>
 
                     <span className={style.stackIcon}>

@@ -9,7 +9,7 @@ const jobData = [
 
 {
     title: 'FRONTEND DEVELOPER',
-    duration: 'Sep 2024 - Current',
+    duration: 'Sep 2024 - Jan 2025',
     description: 'Crafted visually captivating, responsive interfaces that enhanced user experience. Working with the team responsible for a comprehensive redesign of the company\'s entire website. This experience has deepened my expertise in front-end development frameworks and best practices.',
     company: 'Go Bear - Startup',
     location: 'Fully Remote'

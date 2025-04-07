@@ -1,13 +1,21 @@
 .projectsSection {
-    width: 100%;
     height: 100vh;    
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: var(--text-margin);
+    margin-right: var(--text-margin);
 }
 
 .projectsContent {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
+
 }
 
+
+.projectCard {
+    padding: 2rem 0;
+}
+
+.projectCard:not(:last-child) {
+    border-bottom: 1px solid var(--faded-color);
+}

@@ -1,18 +1,21 @@
 import React from 'react';
 import style from './landingProjects.module.css';
-import ProjectColumn from '../../cards/projectCard/projectColumn';
-import PPDashboard from '../../../assets/images/projectImages/PP Dashboard.png';
+import ProjectCard from '../../cards/projectCard/projectCard';
 import projects from '../../../data/projects'
+import { IconClipboard } from '@tabler/icons-react';
 
 
 
 const LandingProjects = () => {
     return (
         <div className={style.projectsSection}>
-            <h1 className='subHeader'>Recent Projects</h1>
+             <p className='sectionHeader'><span><IconClipboard size={40} className={style.icon} /></span>Selected Projects</p>
+
             <div className={style.projectsContent}>
                 {projects.map((project) => (
-                    <ProjectColumn key={project.id} project={project} />
+                    <div className={style.projectCard}>
+                        <ProjectCard key={project.id} project={project} />
+                    </div>
                 ))}
             </div>
         </div>
