@@ -13,7 +13,7 @@ import PullAwayComponent from "../../animations/pullAway/pullAway.js";
 
 export const LandingContent = () => {
     return (
-        <div>
+        <div className={style.margins}>
                 <LandingHeader />
                 <LandingAbout />
                 <TechStack />
