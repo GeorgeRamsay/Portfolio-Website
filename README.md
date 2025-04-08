@@ -10,3 +10,4 @@ This is my personal portfolio website, built to showcase my projects, skills, an
 	•	Frontend: React \
 	•	Deployment: AWS 
 
+Access deployed version : https://www.george-ramsay-portfolio.com/
