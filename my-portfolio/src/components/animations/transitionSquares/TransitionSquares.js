@@ -6,31 +6,27 @@ const TransitionSquares = ({ onComplete }) => {
         greySquare.className = 'greySquare';
         document.body.appendChild(greySquare);
 
-        let purpleSquare; // Define purpleSquare outside the setTimeout
-
-        setTimeout(() => {
-            purpleSquare = document.createElement('div');
+        const purpleSquareTimeout = setTimeout(() => {
+            const purpleSquare = document.createElement('div');
             purpleSquare.className = 'purpleSquare';
             document.body.appendChild(purpleSquare);
 
-            setTimeout(() => {
-                if (document.body.contains(greySquare)) {
-                    document.body.removeChild(greySquare);
+            const navigateTimeout = setTimeout(() => {
+                if (onComplete) {
+                    onComplete();
                 }
-                if (document.body.contains(purpleSquare)) {
-                    document.body.removeChild(purpleSquare);
-                }
-                onComplete();
             }, 300); // 0.3 seconds delay
+
+            return () => clearTimeout(navigateTimeout);
         }, 200); // Reduced delay to start purple square animation after grey square
 
+        const removeGreySquareTimeout = setTimeout(() => {
+            document.body.removeChild(greySquare);
+        }, 500); // Adjust this delay as needed
+
         return () => {
-            if (document.body.contains(greySquare)) {
-                document.body.removeChild(greySquare);
-            }
-            if (purpleSquare && document.body.contains(purpleSquare)) {
-                document.body.removeChild(purpleSquare);
-            }
+            clearTimeout(purpleSquareTimeout);
+            clearTimeout(removeGreySquareTimeout);
         };
     }, [onComplete]);
 

@@ -5,13 +5,16 @@ import projects from '../../../data/projects'
 import { IconClipboard } from '@tabler/icons-react';
 import { useNavigate } from 'react-router-dom';
 
+import TransitionSquares from '../../animations/transitionSquares/TransitionSquares.js'; // Import the TransitionSquares component
 
 
 
 
 const ProjectDescription = () => {
     const [project, setProject] = useState(null);
-    const navigate = useNavigate(); 
+    const [showTransition, setShowTransition] = useState(false);
+    const navigate = useNavigate();
+
     useEffect(() => {
         window.scrollTo(0, 0);
 
@@ -25,15 +28,22 @@ const ProjectDescription = () => {
         setProject(foundProject);
     }, []);
 
+    const handleBackNavigation = () => {
+        setShowTransition(true);
+    };
+
     if (!project) {
         return <div>Loading...</div>;
     }
 
+
     return (
-        <div className={style.projectsSection}>
-            <button className={style.backButton} onClick={() => navigate(-1)}>
-                ← Back
-            </button>
+        <>
+            {showTransition && <TransitionSquares onComplete={() => navigate(-1)} />}
+            <div className={style.projectsSection}>
+                <button className={style.backButton} onClick={handleBackNavigation}>
+                    ← Back
+                </button>
             <p className={style.projectHeader}>
                 {project.name}
             </p>
@@ -80,6 +90,7 @@ const ProjectDescription = () => {
                 )}
                 
         </div>
+        </>
     );
 };
 
