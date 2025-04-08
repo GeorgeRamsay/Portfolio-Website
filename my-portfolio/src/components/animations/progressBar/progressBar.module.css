@@ -2,7 +2,7 @@
     position: fixed;
     top: 50%;
     right: 0;
-    width: 5px;
+    width: 8px;
     height: 200px;
     background-color: #f3f3f3;
     z-index: 1000;
@@ -11,7 +11,7 @@
     align-items: flex-start; /* Align items to the start */
     flex-direction: column; /* Set flex direction to column */
     border-radius: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
   
   .progressBar {
@@ -20,3 +20,10 @@
     height: 0;
     border-radius: 5px;
   }
+
+  /* mobile view */
+    @media (max-width: 768px) {
+        .progressContainer {
+            display: none;
+        }
+    }

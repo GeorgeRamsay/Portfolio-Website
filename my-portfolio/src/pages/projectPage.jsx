@@ -5,12 +5,12 @@ import ProjectDescription from '../components/sections/projectDescription/projec
 function ProjectPage() {
 
     return (
-        <div>
+        <>
            
             <ProjectDescription />
            <Star />
          
-        </div>
+        </>
     );
 }
 

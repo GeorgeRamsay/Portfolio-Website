@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
         <>
             {showTransition && <TransitionSquares onComplete={() => navigate(`projects/${project.link}`)} />}
             <div
-                className={style.projectCard}
+                className={classNames(style.projectCard, 'hover')}
                 ref={cardRef}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
